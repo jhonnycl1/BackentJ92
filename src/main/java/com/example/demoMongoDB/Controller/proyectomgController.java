@@ -12,7 +12,7 @@ import java.util.List;
 //update linea 12
 
 @RestController
-@CrossOrigin(origins = http://localhost:4200")
+@CrossOrigin(origins = "https://frontjhonny.azurewebsites.net")
 @RequestMapping("/api/proyectomgBean")
 public class proyectomgController {
 
