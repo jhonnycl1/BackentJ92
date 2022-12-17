@@ -18,27 +18,32 @@ public class proyectomgController {
     @Autowired
     private proyectomgRepository proyectomgrepository;
     @GetMapping("/obtener")
+    @CrossOrigin(origins = "http://localhost:4200")
     public List<proyectomgBean> getAllProducts(){
 
         return proyectomgrepository.findAll();
     }
 
     @DeleteMapping("/eliminar/{proyectoID}")
+    @CrossOrigin(origins = "http://localhost:4200")
     public void eliminarProyecto(@PathVariable ("proyectoID") String proyectoID){
         proyectomgrepository.deleteById(proyectoID);
 
     }
     @PostMapping("/insertar")
+    @CrossOrigin(origins = "http://localhost:4200")
     public void insertarArticulo(@RequestBody proyectomgBean proBean){
         proyectomgrepository.save(proBean);
     }
 
     @PutMapping("/modificar{proyectoID}")
+    @CrossOrigin(origins = "http://localhost:4200")
     public void modificarArticuloID (@PathVariable("proyectoID") String proyectoID , @RequestBody proyectomgBean proBean){
         proBean.setProyectoID(proyectoID);
         proyectomgrepository.save(proBean);
     }
     @GetMapping("/obtener/{proyectoID}")
+    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<proyectomgBean> obtenerProyectoUnico(@PathVariable("proyectoID") String proyectoID){
 
         proyectomgBean listProyectoEncontrado = proyectomgrepository.findById(proyectoID).orElseThrow();
