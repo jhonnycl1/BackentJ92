@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "http://localhost:4200")
 //@RepositoryRestResource(collectionResourceRel = "proyectomgBean", path="proyectomgBean")
 public interface proyectomgRepository extends MongoRepository<proyectomgBean, String>{
 }
