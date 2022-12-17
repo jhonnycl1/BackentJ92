@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-@CrossOrigin(origins = "https://jhonnyj92.azurewebsites.net")
+@CrossOrigin(origins = "https://jhonnyfrontcertus.azurewebsites.net/t")
 //@RepositoryRestResource(collectionResourceRel = "proyectomgBean", path="proyectomgBean")
 public interface proyectomgRepository extends MongoRepository<proyectomgBean, String>{
 }
