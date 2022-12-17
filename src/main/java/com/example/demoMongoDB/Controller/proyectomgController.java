@@ -12,6 +12,7 @@ import java.util.List;
 //update linea 12
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/proyectomgBean")
 public class proyectomgController {
 
