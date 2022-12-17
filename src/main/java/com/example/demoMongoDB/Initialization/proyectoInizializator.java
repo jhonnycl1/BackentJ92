@@ -1,4 +1,4 @@
-package com.example.demoMongoDB.Initialization;
+/*package com.example.demoMongoDB.Initialization;
 
 import ch.qos.logback.classic.pattern.DateConverter;
 import com.example.demoMongoDB.Bean.proyectomgBean;
@@ -44,4 +44,4 @@ public class proyectoInizializator {
         proyectomgrepository.save(proyecto);
 
     }
-}
+}*/
