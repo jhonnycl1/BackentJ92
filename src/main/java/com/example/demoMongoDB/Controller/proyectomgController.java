@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "https://jhonnyfrontcertus.azurewebsites.net/")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/proyectomgBean")
 public class proyectomgController {
